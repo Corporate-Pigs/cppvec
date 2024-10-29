@@ -22,6 +22,11 @@ struct Vec2 {
     }
 
     template <typename S>
+    Vec2 operator+=(const S scalar) const {
+        return {x + scalar, y + scalar};
+    }
+
+    template <typename S>
     Vec2 operator*(const S scalar) const {
         return {x * scalar, y * scalar};
     }
