@@ -37,7 +37,7 @@ struct Vec2 {
     }
 
     template <typename S>
-    Vec2 operator+=(const S scalar) const {
+    Vec2 operator+=(const S scalar) {
         return {x + scalar, y + scalar};
     }
 
