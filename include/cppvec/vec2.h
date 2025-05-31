@@ -13,7 +13,8 @@ struct Vec2
     T x, y;
 
     bool operator==(const Vec2& other) const { return x == other.x && y == other.y; }
-    bool operator!=(const Vec2& other) const { return x != other.x && y != other.y; }
+    
+    bool operator!=(const Vec2& other) const { return x != other.x || y != other.y; }
 
     Vec2 operator+(const Vec2& other) const { return {this->x + other.x, y + other.y}; }
 
